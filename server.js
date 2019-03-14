@@ -26,10 +26,10 @@ app.use((req, res, next) =>{
     })
     next();
 })
-app.use((req,res,next) => {
-    res.render('maintain.hbs')
+// app.use((req,res,next) => {
+//     res.render('maintain.hbs')
 
-})
+// })
 app.use(express.static(__dirname + "/public"));
 hbs.registerHelper('screamIt', (text) => {
     return text.toUpperCase();
